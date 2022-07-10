@@ -19,8 +19,8 @@
     "target": "es2020",
     "module": "es2020",
     "paths": {
-      "table": [
-        "dist/table"
+      "ng-ui-builder": [
+        "dist/ng-ui-builder"
       ]
     },
     "lib": [

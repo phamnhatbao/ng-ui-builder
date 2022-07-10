@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "table": {
+    "ng-ui-builder": {
       "projectType": "library",
-      "root": "projects/table",
-      "sourceRoot": "projects/table/src",
+      "root": "projects/ng-ui-builder",
+      "sourceRoot": "projects/ng-ui-builder/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/table/ng-package.json"
+            "project": "projects/ng-ui-builder/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/table/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-ui-builder/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/table/tsconfig.lib.json"
+              "tsConfig": "projects/ng-ui-builder/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,12 +27,26 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/table/src/test.ts",
-            "tsConfig": "projects/table/tsconfig.spec.json",
-            "karmaConfig": "projects/table/karma.conf.js"
+            "main": "projects/ng-ui-builder/src/test.ts",
+            "tsConfig": "projects/ng-ui-builder/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-ui-builder/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ng-ui-builder/**/*.ts",
+              "projects/ng-ui-builder/**/*.html"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

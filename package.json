@@ -1,24 +1,30 @@
 {
   "name": "ng-ui-builder",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Angular - Render component ui with configurations",
   "author": {
     "name": "Bao Pham"
   },
   "license": "MIT",
+  "keywords": [
+    "angular",
+    "ng",
+    "ui-builder"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint"
   },
   "private": false,
   "dependencies": {
     "@angular/animations": "^14.0.0",
-    "@angular/common": "^14.0.0",
+    "@angular/common": ">=14.0.0",
     "@angular/compiler": "^14.0.0",
-    "@angular/core": "^14.0.0",
+    "@angular/core": ">=14.0.0",
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
@@ -29,9 +35,17 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.4",
+    "@angular-eslint/builder": "14.0.1",
+    "@angular-eslint/eslint-plugin": "14.0.1",
+    "@angular-eslint/eslint-plugin-template": "14.0.1",
+    "@angular-eslint/schematics": "14.0.1",
+    "@angular-eslint/template-parser": "14.0.1",
     "@angular/cli": "~14.0.4",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "@typescript-eslint/parser": "5.29.0",
+    "eslint": "^8.18.0",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

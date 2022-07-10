@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TableService } from './table.service';
+import { NgUiBuilderService } from './ng-ui-builder.service';
 
-describe('TableService', () => {
-  let service: TableService;
+describe('NgUiBuilderService', () => {
+  let service: NgUiBuilderService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TableService);
+    service = TestBed.inject(NgUiBuilderService);
   });
 
   it('should be created', () => {
