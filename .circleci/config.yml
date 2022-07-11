@@ -5,9 +5,14 @@ defaults: &defaults
   docker:
     - image: circleci/node:lts
 
+defaults=browsers: &defaults=browsers
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:lts=browsers
+
 jobs:
   test:
-    <<: *defaults
+    <<: *defaults=browsers
     environment:
       CHROME_BIN: /usr/bin/google-chrome 
     steps:
