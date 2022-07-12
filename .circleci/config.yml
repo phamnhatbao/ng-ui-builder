@@ -18,7 +18,6 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-browser-tools
-
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
