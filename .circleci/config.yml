@@ -17,8 +17,8 @@ jobs:
       CHROME_BIN: /usr/bin/google-chrome 
     steps:
       - checkout
-      - browser-tools/install-browser-tools:
-          chrome-version: 103.0.5060.114
+      # - browser-tools/install-browser-tools:
+      #     chrome-version: 103.0.5060.114
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
