@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgUiBuilderService } from './ng-ui-builder.service';
+import { WizardService } from './wizard.service';
 
-describe('NgUiBuilderService', () => {
-  let service: NgUiBuilderService;
+describe('WizardService', () => {
+  let service: WizardService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgUiBuilderService);
+    service = TestBed.inject(WizardService);
   });
 
   it('should be created', () => {

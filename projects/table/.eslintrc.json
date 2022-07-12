@@ -10,8 +10,8 @@
       ],
       "parserOptions": {
         "project": [
-          "projects/ng-ui-builder/tsconfig.lib.json",
-          "projects/ng-ui-builder/tsconfig.spec.json"
+          "projects/table/tsconfig.lib.json",
+          "projects/table/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

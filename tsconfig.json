@@ -19,8 +19,14 @@
     "target": "es2020",
     "module": "es2020",
     "paths": {
-      "ng-ui-builder": [
-        "dist/ng-ui-builder"
+      "form": [
+        "dist/ng-ui-builder/form"
+      ],
+      "table": [
+        "dist/ng-ui-builder/table"
+      ],
+      "wizard": [
+        "dist/ng-ui-builder/wizard"
       ]
     },
     "lib": [

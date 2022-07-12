@@ -1,6 +1,6 @@
 {
   "name": "ng-ui-builder",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Angular - Render component ui with configurations",
   "author": {
     "name": "Bao Pham"
@@ -14,9 +14,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "node scripts/build.js",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --watch=false",
     "lint": "ng lint"
   },
   "private": false,
@@ -53,6 +53,7 @@
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^14.0.0",
+    "shelljs": "^0.8.5",
     "typescript": "~4.7.2"
   },
   "peerDependencies": {
