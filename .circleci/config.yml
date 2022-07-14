@@ -87,13 +87,13 @@ workflows:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
             branches:
-              only: main
+              only: circleci-project-setup
       - build:
           filters:
               tags:
                 only: /v[0-9]+(\.[0-9]+)*/
               branches:
-                only: main
+                only: circleci-project-setup
       - deploy:
           requires:
             - test
@@ -102,4 +102,4 @@ workflows:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
             branches:
-              only: main
+              only: circleci-project-setup
