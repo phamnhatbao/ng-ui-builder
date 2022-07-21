@@ -2,6 +2,6 @@
  * Public API Surface of wizard
  */
 
-export * from './lib/wizard.service';
-export * from './lib/wizard.component';
-export * from './lib/wizard.module';
+export * from './wizard.service';
+export * from './wizard.component';
+export * from './wizard.module';

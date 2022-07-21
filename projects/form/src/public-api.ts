@@ -2,6 +2,6 @@
  * Public API Surface of form
  */
 
-export * from './lib/form.service';
-export * from './lib/form.component';
-export * from './lib/form.module';
+export * from './form.service';
+export * from './form.component';
+export * from './form.module';

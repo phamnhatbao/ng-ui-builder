@@ -122,6 +122,29 @@
           }
         }
       }
+    },
+    "root": {
+      "projectType": "library",
+      "root": "projects/root",
+      "sourceRoot": "projects/root/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/root/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/root/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/root/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   },
   "cli": {

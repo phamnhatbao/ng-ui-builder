@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 const { join } = require('path');
-const { cd, ls, set, exec } = require('shelljs');
+const { cd, set, exec } = require('shelljs');
+
+const { buildPackage } = require('./fetch-exports-package-to-root');
 
 const projectDir = join(__dirname, '../projects');
 
@@ -15,9 +17,11 @@ console.log();
 
 cd(projectDir);
 
-const arrLibNames = ls();
+const arrLibNames = ['root', 'form', 'table', 'wizard'];
 
 // Build each library.
 for (const libName of arrLibNames) {
   exec(`ng build ${libName}`);
 }
+
+buildPackage();
