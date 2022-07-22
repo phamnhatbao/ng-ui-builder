@@ -1,6 +1,6 @@
 {
   "name": "ng-ui-builder",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Angular - Render component ui with configurations",
   "author": {
     "name": "Bao Pham"
@@ -17,7 +17,8 @@
     "build": "node scripts/build.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --watch=false",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "sync-version": "node scripts/sync-package-version.js"
   },
   "private": false,
   "dependencies": {
