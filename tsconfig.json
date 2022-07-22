@@ -20,16 +20,16 @@
     "module": "es2020",
     "paths": {
       "form": [
-        "dist/ng-ui-builder/form"
+        "dist/ngx-ui-builder/form"
       ],
       "root": [
         "dist/root"
       ],
       "table": [
-        "dist/ng-ui-builder/table"
+        "dist/ngx-ui-builder/table"
       ],
       "wizard": [
-        "dist/ng-ui-builder/wizard"
+        "dist/ngx-ui-builder/wizard"
       ]
     },
     "lib": [

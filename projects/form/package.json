@@ -1,5 +1,5 @@
 {
-  "name": "ng-ui-builder/form",
+  "name": "ngx-ui-builder/form",
   "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^14.0.0",

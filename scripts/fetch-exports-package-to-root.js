@@ -5,7 +5,7 @@ const { cd } = require('shelljs');
 const { arrLibNames } = require('./libraries.const');
 
 function buildPackage() {
-  const distDir = join(__dirname, '../dist/ng-ui-builder');
+  const distDir = join(__dirname, '../dist/ngx-ui-builder');
   
   cd(distDir);
   

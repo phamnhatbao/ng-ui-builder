@@ -1,5 +1,5 @@
 {
-  "name": "ng-ui-builder/wizard",
+  "name": "ngx-ui-builder/wizard",
   "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
